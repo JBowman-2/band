@@ -14,9 +14,8 @@ body {
 /* header */
 
 header {
-    background-color: $subColor;
+    background-color: black;
     padding: .5rem $gutter;
-    color: white;
 }
 
 
@@ -80,36 +79,50 @@ nav a.active {
 }
 
 nav a:hover {
-    background-color: darken($subColor, 10%);
+    background-color: black;
 
 }
 
 /* main */
 main {
     background-color: rgb(238, 237, 237);
+    margin: 0;
     
 }
 
 main h1 {
-    color: $primaryColor;
-    margin: 15px 0 5px $gutter;
+    color: darken($primaryColor, 25%);
+    padding: 1rem 0 0 2%;
+    margin: 0px;
 }
 
-div.members section {
-    padding: 2%;
+
+
+section.members div {
+    padding: 0 2% 2% 2%;
   
 }
 
-div.members section img{
+section.members div img{
     float: right;
-    width: 150px;
-  
-   clip-path: ellipse(99% 98% at 99% 1%);
-   shape-outside: ellipse(99% 98% at 99% 1%);
+    clip-path: circle(100% at 100% 0%);
+    shape-outside: circle(100% at 100% 0%);
 }
 
-div.members section p{
+section.members div p{
     font-size: .9rem;
+}
+
+section.members div h2{
+    color: $primaryColor;
+    margin-bottom: 5px;
+}
+
+
+section.concert div img {
+     width: 96%;
+     margin: 0 2%;
+     padding: 0;
 }
 
 
@@ -121,9 +134,9 @@ div.members section p{
 
 
 footer {
-    background-color: $subColor;
+    background-color: black;
     text-align: center;
     padding: 1rem $gutter; 
-    color: $primaryColor;
+    color: white;
 }
 

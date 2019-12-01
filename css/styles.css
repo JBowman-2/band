@@ -320,12 +320,11 @@ body {
 
 /* header */
 header {
-  background-color: #FFC676;
-  padding: 0.5rem 2%;
-  color: white; }
+  background-color: black;
+  padding: 0.5rem 2%; }
 
 header h1 {
-  color: #2E80B3;
+  color: red;
   font-weight: 700;
   font-size: 2.8rem;
   margin: 20px 0px 0px 0px; }
@@ -335,12 +334,12 @@ header h2 {
   font-size: 1.4rem;
   margin: 0;
   display: none;
-  color: #459acf;
+  color: #ff3333;
   display: block; }
 
 /* navigation */
 nav {
-  background-color: #2E80B3;
+  background-color: red;
   margin-bottom: 0px; }
 
 nav ul {
@@ -352,11 +351,11 @@ nav li {
   width: 25%;
   list-style-type: none;
   text-align: center;
-  background-color: #6db0da;
-  border-left: 2px solid #2E80B3; }
+  background-color: #ff6666;
+  border-left: 2px solid red; }
 
 nav li.active {
-  background-color: #bfdcee; }
+  background-color: #ffcccc; }
 
 nav a {
   font-size: 1rem;
@@ -368,30 +367,40 @@ nav a {
 
 nav a.active {
   font-weight: 700;
-  color: #14374e; }
+  color: maroon; }
 
 nav a:hover {
-  background-color: #ffb143; }
+  background-color: black; }
 
 /* main */
 main {
-  background-color: #eeeded; }
+  background-color: #eeeded;
+  margin: 0; }
 
 main h1 {
-  color: #2E80B3;
-  margin: 15px 0 5px 2%; }
+  color: maroon;
+  padding: 1rem 0 0 2%;
+  margin: 0px; }
 
-div.members section {
-  padding: 2%; }
+section.members div {
+  padding: 0 2% 2% 2%; }
 
-div.members section img {
+section.members div img {
   float: right;
-  width: 150px;
-  clip-path: ellipse(99% 98% at 99% 1%);
-  shape-outside: ellipse(99% 98% at 99% 1%); }
+  clip-path: circle(100% at 100% 0%);
+  shape-outside: circle(100% at 100% 0%); }
 
-div.members section p {
+section.members div p {
   font-size: .9rem; }
+
+section.members div h2 {
+  color: red;
+  margin-bottom: 5px; }
+
+section.concert div img {
+  width: 96%;
+  margin: 0 2%;
+  padding: 0; }
 
 .clearfix:after {
   content: "";
@@ -399,25 +408,25 @@ div.members section p {
   clear: both; }
 
 footer {
-  background-color: #FFC676;
+  background-color: black;
   text-align: center;
   padding: 1rem 2%;
-  color: #2E80B3; }
+  color: white; }
 
 @media only screen and (min-width: 600px) {
-  div.members section:nth-child(1) {
+  section.members div:nth-child(1) {
     width: 50%;
     float: left; }
 
-  div.members section:nth-child(2) {
+  section.members div:nth-child(2) {
     width: 50%;
     float: left; }
 
-  div.members section:nth-child(3) {
+  section.members div:nth-child(3) {
     width: 50%;
     float: left; }
 
-  div.members section:nth-child(4) {
+  section.members div:nth-child(4) {
     width: 50%;
     float: left; } }
 @media only screen and (min-width: 900px) {
@@ -434,15 +443,15 @@ footer {
   nav a {
     padding: .5rem 1rem; }
 
-  div.members section:nth-child(1) {
+  section.members div:nth-child(1) {
     width: 25%;
     float: left; }
 
-  div.members section:nth-child(2) {
+  section.members div:nth-child(2) {
     width: 25%; }
 
-  div.members section:nth-child(3) {
+  section.members div:nth-child(3) {
     width: 25%; }
 
-  div.members section:nth-child(4) {
+  section.members div:nth-child(4) {
     width: 25%; } }
