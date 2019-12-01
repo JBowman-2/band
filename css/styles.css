@@ -381,6 +381,14 @@ main h1 {
   color: #2E80B3;
   margin: 15px 0 5px 2%; }
 
+div.members section {
+  padding: 2%; }
+
+div.members section img {
+  float: right;
+  width: 125px;
+  padding: 2%; }
+
 .clearfix:after {
   content: "";
   display: table;
@@ -392,6 +400,22 @@ footer {
   padding: 1rem 2%;
   color: #2E80B3; }
 
+@media only screen and (min-width: 600px) {
+  div.members section:nth-child(1) {
+    width: 50%;
+    float: left; }
+
+  div.members section:nth-child(2) {
+    width: 50%;
+    float: left; }
+
+  div.members section:nth-child(3) {
+    width: 50%;
+    float: left; }
+
+  div.members section:nth-child(4) {
+    width: 50%;
+    float: left; } }
 @media only screen and (min-width: 900px) {
   header, nav, main, footer {
     max-width: 75rem;
@@ -404,4 +428,17 @@ footer {
     width: auto; }
 
   nav a {
-    padding: .5rem 1rem; } }
+    padding: .5rem 1rem; }
+
+  div.members section:nth-child(1) {
+    width: 25%;
+    float: left; }
+
+  div.members section:nth-child(2) {
+    width: 25%; }
+
+  div.members section:nth-child(3) {
+    width: 25%; }
+
+  div.members section:nth-child(4) {
+    width: 25%; } }

@@ -95,6 +95,15 @@ main h1 {
     margin: 15px 0 5px $gutter;
 }
 
+div.members section {
+    padding: 2%;
+}
+
+div.members section img{
+    float: right;
+    width: 125px;
+    padding: 2%;
+}
 
 
 .clearfix:after {
