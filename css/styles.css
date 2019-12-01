@@ -386,8 +386,12 @@ div.members section {
 
 div.members section img {
   float: right;
-  width: 125px;
-  padding: 2%; }
+  width: 150px;
+  clip-path: ellipse(99% 98% at 99% 1%);
+  shape-outside: ellipse(99% 98% at 99% 1%); }
+
+div.members section p {
+  font-size: .9rem; }
 
 .clearfix:after {
   content: "";
