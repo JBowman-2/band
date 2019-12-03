@@ -375,7 +375,7 @@ nav a:hover {
 /* main */
 main {
   background-color: #eeeded;
-  margin: 0; }
+  margin-bottom: 0%; }
 
 main h1 {
   color: maroon;
@@ -397,10 +397,17 @@ section.members div h2 {
   color: red;
   margin-bottom: 5px; }
 
-section.concert div img {
-  width: 96%;
-  margin: 0 2%;
-  padding: 0; }
+.image-wrapper div {
+  width: 100%;
+  height: 0;
+  padding-bottom: 60%;
+  /* You define this doing image height / width * 100% */
+  position: relative; }
+
+div.image-wrapper div img {
+  width: 100%;
+  height: auto;
+  position: absolute; }
 
 .clearfix:after {
   content: "";
